@@ -1,0 +1,6 @@
+[Desktop Entry]
+Comment[]=A program to convert between various units of measurement
+Exec=unitconverter
+Icon=unitconverter/Example
+Type=Application
+Name[]=Unit Converter

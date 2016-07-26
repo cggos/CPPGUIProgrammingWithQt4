@@ -1,0 +1,6 @@
+[Desktop Entry]
+Comment[]=A program to record and SMS expenses
+Exec=expenses
+Icon=expenses/expenses
+Type=Application
+Name[]=Expenses

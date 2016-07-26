@@ -1,0 +1,21 @@
+<typesystem package="com.softwareinc.plotter2"
+            default-superclass="com.trolltech.qt.QtJambiObject">
+    <load-typesystem name=":/trolltech/generator/typesystem_core.txt"
+	             generate="no" />
+    <load-typesystem name=":/trolltech/generator/typesystem_gui.txt"
+	             generate="no" />
+    <object-type name="Plotter">
+        <modify-function
+            signature="setCurveData(int,const QVector&lt;QPointF&gt;&amp;)">
+           <access modifier="private" />
+           <rename to="setCurveData_private" />
+        </modify-function>
+        <inject-code>
+            public final void setCurveData(int id,
+                                   com.trolltech.qt.core.QPointF points[]) {
+                setCurveData_private(id, java.util.Arrays.asList(points));
+            }
+        </inject-code>
+    </object-type>
+    <value-type name="PlotSettings" />
+</typesystem>
